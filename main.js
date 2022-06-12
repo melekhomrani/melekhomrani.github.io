@@ -12,6 +12,8 @@ const address = document.querySelector('#address');
 
 const scroll_btn = document.querySelector('.scroll-up-btn');
 
+const date = document.querySelector('#date');
+
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
@@ -58,3 +60,5 @@ scroll_btn.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
+date.innerHTML = new Date().getFullYear();
